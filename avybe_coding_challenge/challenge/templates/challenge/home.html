@@ -1,0 +1,7 @@
+{% extends "challenge/base.html" %}
+{% block content %}
+    <h1>Added Pictures are Below</h1>
+    <p>Go to the Upload to Home tab in order to change the image on the home page.</p>
+    <h1>{{ info.name }}</h1>
+    <img src="{{ info.image.url}}" class="img-responsive" style="width: 100%; " /> 
+{% endblock %}

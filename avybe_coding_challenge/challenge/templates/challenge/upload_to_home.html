@@ -1,0 +1,10 @@
+{% extends "challenge/base.html" %}
+{% block content %}
+<h1>Upload to Home</h1>
+<p>Upload any image you would like! Don't forget to add a caption.</p>
+<form method = "post" enctype="multipart/form-data"> 
+    {% csrf_token %} 
+    {{ form.as_p }} 
+    <button type="submit">Upload</button> 
+</form> 
+{% endblock %}
